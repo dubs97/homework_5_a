@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="PUIass5style.css">
+    </head>
+
+
+    <header>
+        <div class="navbar">
+          <h1 class="name">Bun Bun Bakery</h1>
+          <nav>
+            <ul>
+              <li><a class="item2" href="index.html">Home</a></li>
+              <li><a class="item3" href="menu.html">Menu</a></li>
+              <li><a class="item4" href="contact.html">Contact Us</a></li>
+              <li>
+                <a class="item5" href="cart.html">My Cart</a> 
+                <span id="cartCount">0</span>    
+                </a>   
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <body>
+        <div class="container">
+            <img src="Img/cinnamon.jpg" alt="cinnamon" width="300" height="300" class="i1"/>  
+            <div class="i2">
+              <h1>Pumpkin Spice</h1>
+              <h2>Description</h2>
+              <p>
+                Made with pumpkin in the dough and filled with a gooey pumpkin spiced cinnamon swirl, they're topped with a generous drizzle of maple cream cheese icing. 
+              </p>
+
+              <h2>Quantity</h2>
+              <label >Choose a quantity</label>
+              <select id="quantity">
+                <input type="radio" value="1" name="quant" onchange="updateProductSubtotal()" checked="">
+                <label>1 Roll</label>
+                <input type="radio" value="3" name="quant" onchange="updateProductSubtotal()" checked="">
+                <label>3 Rolls</label>
+                <input type="radio" value="6" name="quant" onchange="updateProductSubtotal()" checked="">
+                <label>6 Rolls</label>
+                <input type="radio" value="12" name="quant" onchange="updateProductSubtotal()" checked="">
+                <label>12 Rolls</label>
+              </select>
+              
+              <h2>Select the Flavor</h2>
+              <input type="radio" id="None" value="None" name="flavor" checked="">
+              <label>None</label><br>
+              <input type="radio" id="Vanilla" value="Vanilla" name="flavor" checked="">
+              <label>Vanilla</label><br>
+              <input type="radio" id="Sugar" value="Sugar" name="flavor" checked="">
+              <label>Sugar</label><br>
+              <input type="radio" id="Chocolate" value="Chocolate" name="flavor" checked="">
+              <label>Chocolate</label><br>
+
+          
+              <h2>Price</h2>
+              <span id="Subtotal">1.99</span><br><br>
+              <input type="button" id="addtocart" value="Add to Cart" onclick= "addToCart()" >
+            </div>
+        </div>
+
+        <script type="text/javascript" src="ass5.js"></script>
+
+    </body>
+
+    
+
