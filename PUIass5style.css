@@ -263,22 +263,30 @@ img.thumbnail {
 #a1{
   margin-left: 25px;
   color: brown;
+  font-size: x-large;
 }
 
 #a2{
   margin-left: 30px;
   color: brown;
+  font-size: x-large;
 }
 
 
 #a3{
   margin-left: 30px;
   color: brown;
+  font-size: x-large;
 }
 
 #a4{
-  margin-left: 1000px;
-  margin-top: 40px;
+  margin-left: 30px;
+  color: brown;
+  font-size: x-large;
+}
+
+#a8 {
+  margin-left: 600px;
 }
 
 #a5{
@@ -308,6 +316,7 @@ img.thumbnail {
 
 .ti{
   margin-left: 30px;
+  color: brown;
 }
 
 
